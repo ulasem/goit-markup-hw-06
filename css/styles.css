@@ -428,6 +428,16 @@ button {
   margin: 0 auto;
 }
 
+@media screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-img@2x.jpg);
+  }
+}
+
 .hero-title {
   font-weight: 700;
   font-size: 36px;
