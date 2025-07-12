@@ -53,8 +53,101 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="burger-btn" data-mobile-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <div class="mobile-menu" data-mobile>
+      <div class="container mobile-menu-container">
+        <button type="button" class="mobile-menu-close" data-mobile-close>
+          <svg width="8" height="8" class="mobile-menu-close-svg">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-nav-list">
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link accent" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-menu-adress">
+          <ul class="mobile-menu-adress-list">
+            <li class="mobile-menu-adress-list-item">
+              <a
+                class="mobile-menu-adress-list-item-link accent"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-adress-list-item">
+              <a
+                class="mobile-menu-adress-list-item-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-list-item-container-social-item">
+            <a href="" class="mobile-menu-list-item-container-social-item-link">
+              <svg
+                class="mobile-menu-list-item-container-social-item-link-svg"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-list-item-container-social-item">
+            <a href="" class="mobile-menu-list-item-container-social-item-link">
+              <svg
+                class="mobile-menu-list-item-container-social-item-link-svg"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-list-item-container-social-item">
+            <a href="" class="mobile-menu-list-item-container-social-item-link">
+              <svg
+                class="mobile-menu-list-item-container-social-item-link-svg"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-list-item-container-social-item">
+            <a href="" class="mobile-menu-list-item-container-social-item-link">
+              <svg
+                class="mobile-menu-list-item-container-social-item-link-svg"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <main>
       <section class="hero-section">
         <div class="container">
@@ -126,7 +219,7 @@
         </div>
       </section>
       <section class="our-team">
-        <div class="container">
+        <div class="container our-team-container">
           <h2 class="our-team-title section-title">Our Team</h2>
           <ul class="our-team-list">
             <li class="our-team-list-item">
@@ -661,11 +754,11 @@
         </div>
       </div>
     </footer>
-    <div class="pop-up-container is-open" data-modal>
+    <div class="pop-up-container" data-modal>
       <div class="pop-up">
         <button type="button" class="pop-up-btn" data-modal-close>
           <svg width="8" height="8" class="pop-up-btn-svg">
-            <use href="./images/icons.svg#cross"></use>
+            <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
         <p class="pop-up-text">Leave your contacts and we will call you back</p>
@@ -751,5 +844,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
